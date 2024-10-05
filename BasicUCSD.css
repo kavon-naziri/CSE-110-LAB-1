@@ -2,6 +2,7 @@
 	background-color: rgb(245, 240, 230);
 	display: inline-block;
 	width:100%;
+	max-width:100%;
 	scroll-margin-top:60px;
 }
 .section-1 p {
@@ -13,6 +14,7 @@
 	color: white;
 	display: inline-block;
 	width:100%;
+	max-width:100%;
 	scroll-margin-top:60px;
 }
 .section-2 p {
@@ -20,6 +22,9 @@
 }
 
 .section-3 {
+	background-color: rgb(245, 240, 230);
+	width:100%;
+	max-width:100%;
 	display: grid;
 	grid-template-areas:
 		"topbar topbar topbar topbar"
@@ -82,4 +87,42 @@ li a {
 li a:hover {
  	background-color: #182b49;
 	color: white;
+}
+
+@media screen and (max-width:800px) {
+	li a {
+		display:none;
+	}
+	img {
+		max-width: 75%;
+	}
+	h1 {
+		font-size:24px;
+	}
+	.section-1 p {
+		font-size:20px;
+	}
+	.section-2 p {
+		font-size: 20px;
+	}
+	.section-3 {
+		display: grid;
+		grid-template-areas:
+			"topbar topbar"
+			"col1 col2"
+			"col3 col4";
+		grid-gap:25px;
+	}
+	.col-1 {
+		grid-area: col1;
+	}
+	.col-2 {
+		grid-area: col2;
+	}
+	.col-3 {
+		grid-area: col3;
+	}
+	.col-4 {
+		grid-area: col4;
+	}
 }

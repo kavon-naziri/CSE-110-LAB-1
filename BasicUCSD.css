@@ -1,0 +1,85 @@
+.section-1 {
+	background-color: rgb(245, 240, 230);
+	display: inline-block;
+	width:100%;
+	scroll-margin-top:60px;
+}
+.section-1 p {
+	font-size:28px;
+}
+
+.section-2 {
+	background-image: url("https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg");
+	color: white;
+	display: inline-block;
+	width:100%;
+	scroll-margin-top:60px;
+}
+.section-2 p {
+	font-size:28px;
+}
+
+.section-3 {
+	display: grid;
+	grid-template-areas:
+		"topbar topbar topbar topbar"
+		"col1 col2 col3 col4";
+	grid-auto-columns: minmax(100px, auto);
+	gap: 25px;
+}
+.col-1 {
+	grid-area: col1;
+	background-color: #182b49;
+	color: white;
+	max-height: 500px;
+	overflow: scroll;
+}
+.col-2 {
+	grid-area: col2;
+	background-color: #182b49;
+	color: white;
+	max-height: 500px;
+	overflow: scroll;
+}
+.col-3 {
+	grid-area: col3;
+	background-color: #182b49;
+	color: white;
+	max-height: 500px;
+	overflow: scroll;
+}
+.col-4 {
+	grid-area: col4;
+	background-color: #182b49;
+	color: white;
+	max-height: 500px;
+	overflow: scroll;
+}
+ul {
+ 	position: sticky;
+	top: 0;
+	list-style-type: none;
+ 	margin: 0;
+ 	padding: 0;
+ 	overflow: hidden;
+	background-color:white;
+}
+
+li {
+ 	float: left;
+}
+
+li a {
+ 	display: block;
+	color: black;
+ 	text-align: center;
+ 	padding: 14px 16px;
+ 	text-decoration: none;
+	font-size: 28px;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+ 	background-color: #182b49;
+	color: white;
+}
